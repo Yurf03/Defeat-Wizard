@@ -175,7 +175,7 @@ def battle(player, wizard):
         if wizard.health > 0:
             wizard.regenerate()
             if player.shield:
-                print(f"{player.name}'s shield absorbs the damage!")
+                print(f"{player.name} takes no damage!")
                 player.shield = False
             else:
                 wizard.attack(player)
